@@ -9,10 +9,10 @@ shinyUI(fluidPage(
 
      sidebarLayout(
           sidebarPanel(
-               helpText("This web site helps you identify the specices of a flower based on certain characteristics."),
-               helpText("You enter the metrics of your specimen below, and the metrics will be compared to the Iris data base to predice the species of your specimen."),
-               helpText("The charts on the right will show how your specimen compares to the reference Iris in the database."),
+               helpText("This application helps you identify the specices of a flower based on certain characteristics."),
+               helpText("You enter the specifications of your specimen below, and the metrics will be compared to the Iris data base to predice the species of your specimen. The table on the right will show you which species your specimen resembeles along with probabilites for each class. The graph on the right will show how your specimen compares to the reference Iris in the database. The tree diagram provides insight on the classification model used to predict the specimen described by the input parameters.  "),
                helpText("Your specimen is marked with an X."),
+               helpText("Please choose your selections below."),
                sliderInput("sepalLength", "Your sepal length [cm]:", round=FALSE, step=0.01,
                            min = 4.0,  # 4.3
                            max = 8.0,  # 7.9
@@ -34,8 +34,11 @@ shinyUI(fluidPage(
                          
           # Show a plot of the generated distribution
           mainPanel(
+               "Results:",
                htmlOutput("results"),
+               "Length vs Width of Flora:",
                plotOutput("chartsPlots"),
+               "Classification Tree Logic:",
                plotOutput("rpartPlot")
 
                

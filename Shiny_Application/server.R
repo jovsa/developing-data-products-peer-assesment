@@ -36,9 +36,10 @@ shinyServer(function(input, output) {
           
           
           g1 <- ggplot()
-#           g1 <- g1 + theme_solarized()
-          g1 <- g1 + geom_point(data = iris, aes(x= Sepal.Width+Petal.Width, y = Sepal.Length+Petal.Length, col=Species))
-          g1 <- g1 + geom_point(aes(x=Sepal.Width+Petal.Width, y=Sepal.Length+Petal.Length, col=Species), size=5, shape=4, data=irisP)
+          g1 <- g1 + scale_colour_brewer(palette="Set1")
+          g1 <- g1 + geom_point(data = iris, aes(x= Sepal.Width+Petal.Width, y = Sepal.Length+Petal.Length, col=Species, alpha = 0.5, size = 7))
+          g1 <- g1 + geom_point(aes(x=Sepal.Width+Petal.Width, y=Sepal.Length+Petal.Length, col=Species), size=10, shape=4, data=irisP)
+          g1 <- g1 + guides(alpha=FALSE, size=FALSE)
           print(g1)
           
 })  
