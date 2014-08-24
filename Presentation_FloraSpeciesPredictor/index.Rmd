@@ -8,7 +8,9 @@ highlighter : prettify  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+github:
+     user: JovanSardinha
+     repo: DevelopingDataProducts_PeerAssesment/Presentation_FloraSpeciesPredictor
 ---
 
 ## Background & Purpose of this Project
@@ -37,6 +39,12 @@ The image below shows the various parts of the application and a sample output
 
 ## Machine Learning Model Used
 
+```{r, cache=TRUE}
+library(caret)
+data(iris)
+modFit <- train(Species ~ ., method="rpart", data=iris)
+print(modFit$results)
+```
 
 
 --- .class #id 

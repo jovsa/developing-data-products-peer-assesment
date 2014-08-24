@@ -38,6 +38,12 @@ The image below shows the various parts of the application and a sample output
 ## Machine Learning Model Used
 
 
+```r
+library(caret)
+data(iris)
+modFit <- train(Species ~ ., method="rpart", data=iris)
+```
+
 
 --- .class #id 
 
