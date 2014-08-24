@@ -52,4 +52,4 @@ print(modFit$results)
 
 ## More Information about the Project
 
-
+More information can be foind here: https://github.com/JovanSardinha/DevelopingDataProducts_PeerAssesment

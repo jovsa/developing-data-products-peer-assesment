@@ -8,7 +8,9 @@ highlighter : prettify  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+github:
+     user: JovanSardinha
+     repo: DevelopingDataProducts_PeerAssesment/Presentation_FloraSpeciesPredictor
 ---
 
 ## Background & Purpose of this Project
@@ -42,6 +44,14 @@ The image below shows the various parts of the application and a sample output
 library(caret)
 data(iris)
 modFit <- train(Species ~ ., method="rpart", data=iris)
+print(modFit$results)
+```
+
+```
+##     cp Accuracy  Kappa AccuracySD KappaSD
+## 1 0.00   0.9382 0.9065    0.02579 0.03875
+## 2 0.44   0.7027 0.5703    0.15306 0.21410
+## 3 0.50   0.5271 0.3105    0.13709 0.20415
 ```
 
 
@@ -50,4 +60,4 @@ modFit <- train(Species ~ ., method="rpart", data=iris)
 
 ## More Information about the Project
 
-
+More information can be foind here: https://github.com/JovanSardinha/DevelopingDataProducts_PeerAssesment
