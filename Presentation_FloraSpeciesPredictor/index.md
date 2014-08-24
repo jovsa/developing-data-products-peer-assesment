@@ -42,6 +42,6 @@ The image below shows the various parts of the application and a sample output
 --- .class #id 
 
 
-## More Information on the project
+## More Information about the Project
 
 
