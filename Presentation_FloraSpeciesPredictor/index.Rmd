@@ -24,21 +24,24 @@ To build a web application that allows users to get a prediction for a flora spe
 
 --- .class #id 
 
-## How was this done?
+## About the Application
 
-this is a joke
+Link to the application: http://www.google.ca
+
+The image below shows the various parts of the application and a sample output
 
 <img src="assets/img/ApplicationScreenshot2.png"/>
 
 
 --- .class #id 
 
-## What does it look like?
+## Machine Learning Model Used
+
+
 
 --- .class #id 
 
 
-## How accurate is the model?
+## More Information on the project
 
---- .class #id 
 
